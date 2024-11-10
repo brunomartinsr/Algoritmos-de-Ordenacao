@@ -83,7 +83,6 @@ void executarTestesDePerformance() {
 void analiseComparativa() {
     printf("\nAnálise Comparativa:\n");
 
-    // Comente sobre o desempenho observado em termos de complexidade teórica e prática
     printf("1. O algoritmo Bubble Sort cresce rapidamente e tem um desempenho significativamente mais lento à medida que o tamanho do array aumenta.\n");
     printf("2. O Selection Sort tem um desempenho semelhante ao Bubble Sort, mas realiza um número ligeiramente menor de trocas, o que o torna um pouco mais eficiente.\n");
     printf("3. O Insertion Sort é eficiente para conjuntos de dados pequenos, mas se torna ineficaz para arrays grandes, pois o tempo de execução aumenta rapidamente.\n");
@@ -91,7 +90,6 @@ void analiseComparativa() {
     printf("5. O Heap Sort tem um comportamento semelhante ao Merge Sort e Quick Sort, sendo eficiente para grandes listas, mas com diferenças na implementação e no desempenho em listas já ordenadas.\n");
 
 
-    // Relatar qual algoritmo é mais adequado para cada tipo de entrada
     printf("\nConclusão da Análise Comparativa:\n");
     printf("- Para arrays pequenos, Insertion Sort ou Selection Sort podem ser viáveis, pois têm uma sobrecarga menor para arrays pequenos.\n");
     printf("- Para arrays grandes, Merge Sort, Quick Sort e Heap Sort são significativamente mais eficientes.\n");
