@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
-#include <time.h>  // Para medir o tempo de execução
+#include <time.h> 
 
 // Estrutura item para quicksort
 typedef struct {
