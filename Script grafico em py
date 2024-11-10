@@ -1,0 +1,32 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Dados de desempenho extraídos e corrigidos
+array_sizes = [100, 1000, 10000, 50000, 100000]
+bubble_sort = [0.000028, 0.002399, 0.143120, 5.293095, 23.832443]
+selection_sort = [0.000019, 0.001406, 0.082601, 1.897963, 7.818599]
+insertion_sort = [0.000011, 0.000873, 0.051320, 1.303259, 5.533796]
+merge_sort = [0.000012, 0.000164, 0.001369, 0.007872, 0.016952]
+quick_sort = [0.000010, 0.000128, 0.001160, 0.006570, 0.014638]
+heap_sort = [0.000036, 0.002270, 0.125982, 3.050451, 14.074942]
+
+# Criando o gráfico
+plt.figure(figsize=(10, 6))
+plt.plot(array_sizes, bubble_sort, marker='o', label='Bubble Sort')
+plt.plot(array_sizes, selection_sort, marker='o', label='Selection Sort')
+plt.plot(array_sizes, insertion_sort, marker='o', label='Insertion Sort')
+plt.plot(array_sizes, merge_sort, marker='o', label='Merge Sort')
+plt.plot(array_sizes, quick_sort, marker='o', label='Quick Sort')
+plt.plot(array_sizes, heap_sort, marker='o', label='Heap Sort')
+
+# Configurações do gráfico
+plt.xscale("log")
+plt.yscale("log")
+plt.xlabel("Tamanho do Array")
+plt.ylabel("Tempo de Execução (s)")
+plt.title("Comparação de Algoritmos de Ordenação - Tempo de Execução")
+plt.legend()
+plt.grid(True, which="both", linestyle="--", linewidth=0.5)
+
+# Exibir o gráfico
+plt.show()
